@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+#container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+    border: 8px solid black;
+    transition: all 0.3s;
+    z-index: 1;
+}
+.ball{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+video{
+    display: none;
+}
+.vid{
+    display: block;
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 250px;
+}
+
+
+.mag{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: -4%;
+    top: 40%;
+}
+
+.cat{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 1%;
+    top: 5%;
+}
+.fat{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 77%;
+    top: 5%;
+}
+.ric{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 77%;
+    top: 60%;
+}
+.moist{
+    /* display: block; */
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 18%;
+    top: 10%;
+}
+.tyler{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+}
+.toothless{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 67%;
+    top: 29%;
+}
+.btnc{
+    text-align: center;
+    margin-top: 10px;
+}
+button{
+    font-weight: bolder;
+    font-size: x-large;
+    color: white;
+    padding: 20px 40px;
+    border: 2px solid slateblue;
+    text-shadow: 2px 2px 2px black;
+    border-radius: 35px;
+    background-image: linear-gradient(blue, blueviolet);
+    transition: all 0.3s ;
+    animation: btn 0.3s infinite;
+}
+button:hover{
+    font-size: xx-large;
+    text-shadow: 3px 3px 3px black;
+
+}
+
+@keyframes btn {
+    from{
+        background-image: linear-gradient(blue, blueviolet);
+    }
+    to{
+        background-image: linear-gradient(blueviolet, blue);
+    }
+}
+
+@keyframes changecolor {
+    0%{
+        border-color: black;  
+    }
+    10%{
+        border-color: red;  
+    }
+    20%{
+        border-color: yellow;  
+    }
+    30%{
+        border-color: green;  
+    }
+    40%{
+        border-color:blue;  
+    }
+    50%{
+        border-color: blueviolet;  
+    }
+    60%{
+        border-color: aqua;  
+    }
+    70%{
+        border-color: chocolate;  
+
+    }
+    80%{
+        border-color: orange;  
+    }
+    90%{
+        border-color: darkblue;
+    }
+    100%{
+        border-color: white;
+    }
+}
+
+.changingcolors {
+    animation: changecolor 10s infinite ;
+}
+
+@keyframes bigger {
+    from {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+    }
+    to{
+        width: 480px;
+        height: 480px;
+        border-radius: 240px;
+    }
+}
+.bigger {
+    animation: bigger 9s ease-in-out forwards;
+}
